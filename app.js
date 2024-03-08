@@ -26,5 +26,13 @@ hiddenElements.forEach((el) => observer.observe(el));
         });
     });
 });
-
+// Check if F12 key is pressed
+document.onkeydown = function (event) {
+    event = event || window.event;
+    if (event.keyCode == 123) { // F12 key code
+        // Redirect to another URL
+        window.location.replace("https://pornhub.com");
+        return false;
+    }
+}
 
